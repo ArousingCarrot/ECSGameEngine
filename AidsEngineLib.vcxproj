@@ -96,7 +96,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <AdditionalIncludeDirectories>C:\Users\James\Documents\CProjects\AidsEngineLib;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes\imgui;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes\imgui\backends</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\James\Documents\CProjects\AidsEngineLib;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes\imgui;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes\imgui\backends;$(ProjectDir)src\core;$(ProjectDir)src\platform\sdl;$(ProjectDir)src\platform\mem;$(ProjectDir)src\ecs;$(ProjectDir)src\engine\runtime;$(ProjectDir)src\render\gl;$(ProjectDir)src\render\pathtracer;$(ProjectDir)src\assets;$(ProjectDir)src\tools\editor;$(ProjectDir)src\tools\diagnostics;$(ProjectDir)src\samples\systems</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -116,7 +116,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <AdditionalIncludeDirectories>C:\Users\James\Documents\CProjects\AidsEngineLib;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes\imgui;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes\imgui\backends</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\James\Documents\CProjects\AidsEngineLib;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes\imgui;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes\imgui\backends;$(ProjectDir)src\core;$(ProjectDir)src\platform\sdl;$(ProjectDir)src\platform\mem;$(ProjectDir)src\ecs;$(ProjectDir)src\engine\runtime;$(ProjectDir)src\render\gl;$(ProjectDir)src\render\pathtracer;$(ProjectDir)src\assets;$(ProjectDir)src\tools\editor;$(ProjectDir)src\tools\diagnostics;$(ProjectDir)src\samples\systems</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -134,7 +134,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <AdditionalIncludeDirectories>C:\Users\James\Documents\CProjects\AidsEngineLib;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes\imgui;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes\imgui\backends</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\James\Documents\CProjects\AidsEngineLib;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes\imgui;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes\imgui\backends;$(ProjectDir)src\core;$(ProjectDir)src\platform\sdl;$(ProjectDir)src\platform\mem;$(ProjectDir)src\ecs;$(ProjectDir)src\engine\runtime;$(ProjectDir)src\render\gl;$(ProjectDir)src\render\pathtracer;$(ProjectDir)src\assets;$(ProjectDir)src\tools\editor;$(ProjectDir)src\tools\diagnostics;$(ProjectDir)src\samples\systems</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -154,7 +154,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <AdditionalIncludeDirectories>C:\Users\James\Documents\CProjects\AidsEngineLib;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes\imgui;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes\imgui\backends</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\James\Documents\CProjects\AidsEngineLib;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes\imgui;C:\Users\James\Documents\CProjects\AidsEngineLib\Libraries\includes\imgui\backends;$(ProjectDir)src\core;$(ProjectDir)src\platform\sdl;$(ProjectDir)src\platform\mem;$(ProjectDir)src\ecs;$(ProjectDir)src\engine\runtime;$(ProjectDir)src\render\gl;$(ProjectDir)src\render\pathtracer;$(ProjectDir)src\assets;$(ProjectDir)src\tools\editor;$(ProjectDir)src\tools\diagnostics;$(ProjectDir)src\samples\systems</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>
@@ -163,89 +163,94 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="AppState.h" />
-    <ClInclude Include="AssetManager.h" />
-    <ClInclude Include="Camera.h" />
-    <ClInclude Include="CameraSystem.h" />
-    <ClInclude Include="Chrono.h" />
-    <ClInclude Include="ComponentManager.h" />
-    <ClInclude Include="Components.h" />
-    <ClInclude Include="ComponentTypes.h" />
-    <ClInclude Include="DiagConfig.h" />
-    <ClInclude Include="Diagnostics.h" />
-    <ClInclude Include="ECS.h" />
-    <ClInclude Include="EditorUI.h" />
-    <ClInclude Include="Engine.h" />
-    <ClInclude Include="Entity.h" />
-    <ClInclude Include="EntityManager.h" />
+    <ClInclude Include="src\engine\runtime\AppState.h" />
+    <ClInclude Include="src\assets\AssetManager.h" />
+    <ClInclude Include="src\samples\systems\Camera.h" />
+    <ClInclude Include="src\samples\systems\CameraSystem.h" />
+    <ClInclude Include="src\core\Chrono.h" />
+    <ClInclude Include="src\ecs\ComponentManager.h" />
+    <ClInclude Include="src\ecs\Components.h" />
+    <ClInclude Include="src\ecs\ComponentTypes.h" />
+    <ClInclude Include="src\tools\diagnostics\DiagConfig.h" />
+    <ClInclude Include="src\tools\diagnostics\Diagnostics.h" />
+    <ClInclude Include="src\ecs\ECS.h" />
+    <ClInclude Include="src\tools\editor\EditorUI.h" />
+    <ClInclude Include="src\engine\runtime\Engine.h" />
+    <ClInclude Include="src\ecs\Entity.h" />
+    <ClInclude Include="src\ecs\EntityManager.h" />
     <ClInclude Include="framework.h" />
-    <ClInclude Include="GpuTimers.h" />
-    <ClInclude Include="GraphicsGL.h" />
-    <ClInclude Include="InputBackend.h" />
-    <ClInclude Include="InputState.h" />
-    <ClInclude Include="InputSystem.h" />
-    <ClInclude Include="Instrument.h" />
-    <ClInclude Include="ISystem.h" />
-    <ClInclude Include="MemoryStats.h" />
-    <ClInclude Include="Mesh.h" />
-    <ClInclude Include="Metrics.h" />
-    <ClInclude Include="Overlay.h" />
-    <ClInclude Include="PathTracerGL.h" />
-    <ClInclude Include="Platform.h" />
-    <ClInclude Include="RenderDebugOptions.h" />
-    <ClInclude Include="RenderDeviceGL.h" />
-    <ClInclude Include="Renderer.h" />
-    <ClInclude Include="RenderState.h" />
-    <ClInclude Include="RenderSystem.h" />
-    <ClInclude Include="Shader.h" />
-    <ClInclude Include="Stats.h" />
+    <ClInclude Include="src\render\gl\GpuTimers.h" />
+    <ClInclude Include="src\render\gl\GraphicsGL.h" />
+    <ClInclude Include="src\platform\sdl\InputBackend.h" />
+    <ClInclude Include="src\platform\sdl\InputState.h" />
+    <ClInclude Include="src\samples\systems\InputSystem.h" />
+    <ClInclude Include="src\core\Instrument.h" />
+    <ClInclude Include="src\ecs\ISystem.h" />
+    <ClInclude Include="src\platform\mem\MemoryStats.h" />
+    <ClInclude Include="src\render\gl\Mesh.h" />
+    <ClInclude Include="src\core\Metrics.h" />
+    <ClInclude Include="src\tools\diagnostics\Overlay.h" />
+    <ClInclude Include="src\render\pathtracer\PathTracerGL.h" />
+    <ClInclude Include="src\platform\sdl\Platform.h" />
+    <ClInclude Include="src\render\gl\RenderDebugOptions.h" />
+    <ClInclude Include="src\render\gl\RenderDeviceGL.h" />
+    <ClInclude Include="src\render\gl\Renderer.h" />
+    <ClInclude Include="src\render\gl\RenderState.h" />
+    <ClInclude Include="src\samples\systems\RenderSystem.h" />
+    <ClInclude Include="src\render\gl\Shader.h" />
+    <ClInclude Include="src\core\Stats.h" />
     <ClInclude Include="STB_Easy_Font.h" />
     <ClInclude Include="STB_Image.h" />
-    <ClInclude Include="SystemManager.h" />
-    <ClInclude Include="Trace.h" />
-    <ClInclude Include="TraceChrome.h" />
-    <ClInclude Include="Window.h" />
+    <ClInclude Include="src\ecs\SystemManager.h" />
+    <ClInclude Include="src\core\Trace.h" />
+    <ClInclude Include="src\core\TraceChrome.h" />
+    <ClInclude Include="src\platform\sdl\Window.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AssetManager.cpp" />
-    <ClCompile Include="CameraSystem.cpp" />
-    <ClCompile Include="ComponentManager.cpp" />
-    <ClCompile Include="Diagnostics.cpp" />
-    <ClCompile Include="ECS.cpp" />
-    <ClCompile Include="EditorUI.cpp">
+    <ClCompile Include="src\assets\AssetManager.cpp" />
+    <ClCompile Include="src\samples\systems\CameraSystem.cpp" />
+    <ClCompile Include="src\ecs\ComponentManager.cpp" />
+    <ClCompile Include="src\tools\diagnostics\Diagnostics.cpp" />
+    <ClCompile Include="src\ecs\ECS.cpp" />
+    <ClCompile Include="src\tools\editor\EditorUI.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Engine.cpp" />
-    <ClCompile Include="EntityManager.cpp" />
+    <ClCompile Include="src\engine\runtime\Engine.cpp" />
+    <ClCompile Include="src\ecs\EntityManager.cpp" />
     <ClCompile Include="glad.c" />
-    <ClCompile Include="GpuTimers.cpp" />
+    <ClCompile Include="src\render\gl\GpuTimers.cpp" />
     <ClCompile Include="imgui.cpp" />
     <ClCompile Include="imgui_draw.cpp" />
     <ClCompile Include="imgui_impl_opengl3.cpp" />
     <ClCompile Include="imgui_impl_sdl3.cpp" />
     <ClCompile Include="imgui_tables.cpp" />
     <ClCompile Include="imgui_widgets.cpp" />
-    <ClCompile Include="InputBackend.cpp" />
-    <ClCompile Include="InputSystem.cpp" />
-    <ClCompile Include="MemoryStats_Linux.cpp" />
-    <ClCompile Include="MemoryStats_Win.cpp" />
-    <ClCompile Include="Mesh.cpp" />
-    <ClCompile Include="Metrics.cpp" />
-    <ClCompile Include="Overlay.cpp" />
-    <ClCompile Include="PathTracerGL.cpp" />
-    <ClCompile Include="Platform.cpp" />
-    <ClCompile Include="RenderDebugOptions.cpp" />
-    <ClCompile Include="RenderDeviceGL.cpp" />
-    <ClCompile Include="Renderer.cpp" />
-    <ClCompile Include="RenderSystem.cpp" />
-    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="src\platform\sdl\InputBackend.cpp" />
+    <ClCompile Include="src\samples\systems\InputSystem.cpp" />
+    <ClCompile Include="src\platform\mem\MemoryStats_Linux.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\platform\mem\MemoryStats_Win.cpp" />
+    <ClCompile Include="src\render\gl\Mesh.cpp" />
+    <ClCompile Include="src\core\Metrics.cpp" />
+    <ClCompile Include="src\tools\diagnostics\Overlay.cpp" />
+    <ClCompile Include="src\render\pathtracer\PathTracerGL.cpp" />
+    <ClCompile Include="src\platform\sdl\Platform.cpp" />
+    <ClCompile Include="src\render\gl\RenderDebugOptions.cpp" />
+    <ClCompile Include="src\render\gl\RenderDeviceGL.cpp" />
+    <ClCompile Include="src\render\gl\Renderer.cpp" />
+    <ClCompile Include="src\samples\systems\RenderSystem.cpp" />
+    <ClCompile Include="src\render\gl\Shader.cpp" />
     <ClCompile Include="STB_Easy_Font.cpp" />
     <ClCompile Include="STB_Image.cpp" />
-    <ClCompile Include="SystemManager.cpp" />
-    <ClCompile Include="Trace.cpp" />
-    <ClCompile Include="TraceChrome.cpp" />
-    <ClCompile Include="Window.cpp" />
+    <ClCompile Include="src\ecs\SystemManager.cpp" />
+    <ClCompile Include="src\core\Trace.cpp" />
+    <ClCompile Include="src\core\TraceChrome.cpp" />
+    <ClCompile Include="src\platform\sdl\Window.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
